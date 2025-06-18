@@ -1,99 +1,132 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elura Caregiving Assistant</title>
-  <!-- Tailwind CSS CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elura – Care Assistant</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
-      <span class="text-2xl font-bold text-emerald-600">Elura</span>
-      <span class="text-sm text-gray-600">coming soon</span>
-    </div>
-  </header>
+<body class="font-sans text-[#1F2937] bg-white">
 
   <!-- Hero Section -->
-  <section class="bg-emerald-50 py-12 px-4">
-    <div class="max-w-4xl mx-auto text-center space-y-4">
-      <h1 class="text-3xl font-bold text-gray-900">
-        Your AI Assistant for Caring for Aging Parents
-      </h1>
-      <p class="text-lg text-gray-700">
-        Elura gives you daily updates, wellness info, and appointment tracking — all in one gentle dashboard.
-      </p>
-      <form action="#" class="flex flex-col sm:flex-row justify-center items-center gap-2 mt-4">
-        <input type="email" placeholder="Enter your email" class="w-full sm:w-auto px-4 py-2 border rounded-md" required>
-        <button type="submit" class="bg-emerald-600 text-white px-6 py-2 rounded-md">Join the Waitlist</button>
-      </form>
-    </div>
+  <section class="text-center py-12 px-4 bg-[#0F5132] text-white">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">AI-Powered Help for Family Caregivers</h1>
+    <p class="text-lg text-white max-w-xl mx-auto mb-6">Stay organized, reduce stress, and support your loved one with confidence.</p>
+
+    <!-- Email Signup Form -->
+    <form action="https://script.google.com/macros/s/AKfycbxUz83GI7IFfB0Yvea_fJEsYv27caB2G-ohMsUCilGo2VL83YXe5BSOd3yEIepYcsQ/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2 items-center justify-center">
+      <input type="email" name="email" placeholder="Your email address" required class="w-full px-4 py-2 border border-white bg-white text-[#0F5132] rounded text-sm focus:outline-none focus:ring-2 focus:ring-[#0F5132]" />
+      <button type="submit" class="bg-[#0F5132] bg-[#FFC300] text-[#0F5132] px-6 py-2 rounded hover:bg-yellow-400 transition">Join the Waitlist</button>
+    </form>
+<div id="form-message" class="text-sm mt-3 text-white"></div>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+<p class="text-xs text-white mt-2">No spam. 90% discount for your first year if you join the waitlist now.</p>
+
   </section>
 
-  <!-- Pain Wall (Emotional Testimonials) -->
-  <section class="py-12 px-4 bg-white">
-    <div class="max-w-4xl mx-auto grid gap-4">
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“I’m always worried — I never know if Mom took her meds or ate lunch.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“Every doctor visit means digging through five different apps and email threads.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“My siblings and I keep texting the same questions. No one knows what’s going on.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“Dad won’t talk about hiring help. These conversations feel so difficult.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“I feel guilty when I focus on work — but I can’t be on-call 24/7.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“I missed an appointment because I didn’t see the reminder buried in my calendar.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“There’s no central place to keep track of meds, vitals, and plans — I’m have to do mental gymnastics.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“I’m scared something will happen and I’ll find out too late.”</div>
-      <div class="p-4 border-l-4 border-emerald-600 bg-gray-50">“I just want a way to help — without falling apart in the process.”</div>
-    </div>
-  </section>
+  <!-- Pain to Features Transition -->
+  <section class="flex flex-col md:flex-row items-start justify-center gap-10 px-6 py-10 max-w-7xl mx-auto">
 
-  <!-- Feature Section -->
-  <section class="py-12 px-4 bg-emerald-50">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Elura is designed to take the mental load off your shoulders.</h2>
-      <div class="grid sm:grid-cols-2 gap-4 text-left">
-        <div class="p-4 bg-white rounded shadow">✅ Daily care summaries</div>
-        <div class="p-4 bg-white rounded shadow">✅ Medication & appointment reminders</div>
-        <div class="p-4 bg-white rounded shadow">✅ Shared dashboard for your family</div>
-        <div class="p-4 bg-white rounded shadow">✅ Guided conversation support</div>
-        <div class="p-4 bg-white rounded shadow">✅ Secure document vault</div>
+    <!-- Wall of Pain -->
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-2xl font-semibold mb-4">What caregivers say:</h2>
+      <div class="space-y-2">
+        <div class="bg-gray-100 p-4 rounded">“I never know if Mom took her meds.”</div>
+        <div class="bg-gray-100 p-4 rounded">“Appointments keep slipping through.”</div>
+        <div class="bg-gray-100 p-4 rounded">“Siblings keep asking the same questions.”</div>
+        <div class="bg-gray-100 p-4 rounded">“Talking about help turns into arguments.”</div>
+        <div class="bg-gray-100 p-4 rounded">“I'm drowning in reminders and notes.”</div>
       </div>
     </div>
-  </section>
 
-  <!-- What You Can Expect -->
-  <section class="py-12 px-4 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold text-gray-900 text-center mb-4">With Elura, you’ll finally feel...</h2>
-      <ul class="list-disc pl-5 space-y-2">
-        <li>Confident you’re not missing something important</li>
-        <li>Supported — not doing this all on your own</li>
-        <li>In control of appointments, meds, and tasks</li>
-        <li>Calmer, knowing there’s a system in place</li>
-        <li>Better connected with siblings and helpers</li>
-        <li>Focused at work without guilt or anxiety</li>
+    <!-- Arrow Divider -->
+    <div class="hidden md:flex flex-col items-center w-16 mt-20">
+      <div class="text-[#0F5132] font-semibold mb-2">Elura</div>
+      <svg class="w-8 h-8 text-[#0F5132]" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m0 0l-6-6m6 6l-6 6" />
+      </svg>
+    </div>
+
+    <!-- Feature List -->
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-2xl font-semibold mb-4">How Elura helps:</h2>
+      <ul class="space-y-2">
+        <li class="flex items-start"><span class="text-[#0F5132] mr-2">✅</span> Daily Care Summaries</li>
+        <li class="flex items-start"><span class="text-[#0F5132] mr-2">✅</span> Medication & Appointment Reminders</li>
+        <li class="flex items-start"><span class="text-[#0F5132] mr-2">✅</span> Shared Dashboard for Family</li>
+        <li class="flex items-start"><span class="text-[#0F5132] mr-2">✅</span> Guided Conversation Support</li>
+        <li class="flex items-start"><span class="text-[#0F5132] mr-2">✅</span> Secure Document Vault</li>
       </ul>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="py-12 px-4 bg-emerald-50">
-    <div class="max-w-4xl mx-auto text-center space-y-4">
-      <form action="#" class="flex flex-col sm:flex-row justify-center items-center gap-2">
-        <input type="email" placeholder="Enter your email" class="w-full sm:w-auto px-4 py-2 border rounded-md" required>
-        <button type="submit" class="bg-emerald-600 text-white px-6 py-2 rounded-md">Join the Waitlist</button>
-      </form>
-      <p class="text-gray-700 text-sm">No spam. Just helpful updates from Elura.</p>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
-    <div class="max-w-4xl mx-auto text-center text-sm">
-      <p>Elura · elura.care · Built with love for caregivers</p>
-      <p class="mt-1">&copy; 2025</p>
-    </div>
+  <footer class="text-center text-sm text-gray-500 py-6 border-t">
+    Elura · elura.care · Built with love for caregivers · © 2025
   </footer>
-</body>
-</html>
 
+
+<script>
+  let submitted = false;
+  function showConfirmation() {
+    if (submitted) {
+      alert("Thanks for joining the waitlist!");
+    }
+  }
+  window.onload = () => {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", () => {
+      setTimeout(showConfirmation, 500);
+    });
+  };
+</script>
+
+<script>
+  let submitted = false;
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function showMessage(type, text) {
+    const el = document.getElementById('form-message');
+    el.textContent = text;
+    el.className = 'text-sm mt-3 ' + (type === 'success' ? 'text-green-300' : 'text-red-300');
+  }
+
+  window.onload = () => {
+    const form = document.querySelector("form");
+    const emailInput = form.querySelector("input[name='email']");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!validateEmail(email)) {
+        showMessage("error", "Please enter a valid email address.");
+        return;
+      }
+
+      if (localStorage.getItem("elura_waitlist_" + email)) {
+        showMessage("error", "This email has already been submitted.");
+        return;
+      }
+
+      submitted = true;
+      const iframe = document.querySelector("iframe[name='hidden_iframe']");
+      iframe.onload = () => {
+        if (submitted) {
+          showMessage("success", "Thanks for joining the waitlist!");
+          localStorage.setItem("elura_waitlist_" + email, "true");
+          form.reset();
+          submitted = false;
+        }
+      };
+      form.submit();
+    });
+  };
+</script>
+</body>
+
+
+</html>
